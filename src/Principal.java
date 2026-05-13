@@ -8,27 +8,21 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme filme1 = new Filme();
-        filme1.setNome("Os Vingadores");
-        filme1.setAnoDeLancamento(2012);
+        Filme filme1 = new Filme("Os Vingadores", 2012);
         filme1.setIncluidoNoPlano(true);
         filme1.setDuracaoEmMinutos(120);
         filme1.avalia(10);
         filme1.avalia(10);
         filme1.avalia(10);
 
-        Filme filme2 = new Filme();
-        filme2.setNome("Os Incríveis");
-        filme2.setAnoDeLancamento(2007);
+        Filme filme2 = new Filme("Os Incríveis", 2007);
         filme2.setIncluidoNoPlano(true);
         filme2.setDuracaoEmMinutos(90);
         filme2.avalia(10);
         filme2.avalia(8);
         filme2.avalia(10);
 
-        Serie serie1 = new Serie();
-        serie1.setNome("Stranger Things");
-        serie1.setAnoDeLancamento(2015);
+        Serie serie1 = new Serie("Stranger Things", 2016);
         serie1.setIncluidoNoPlano(true);
         serie1.setAtiva(false);
         serie1.setTemporadas(4);
