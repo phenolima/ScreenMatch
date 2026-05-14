@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo>{
     private String nome;
     private int anoDeLancamento;
     private int duracaoEmMinutos;
@@ -68,5 +68,10 @@ public class Titulo {
 
     public void setIncluidoNoPlano(boolean incluidoNoPlano) {
         this.incluidoNoPlano = incluidoNoPlano;
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return getNome().compareTo(outroTitulo.getNome());
     }
 }
